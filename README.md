@@ -25,6 +25,8 @@ This is a simple go program to demonstrate using the modules feature of golang.
 
 6. Observe the logs
 
+7. Interrupt the program by typing CTRL-C
+
 ## Working with Modules
 
 1. Remove any go.mod and go.sum files
