@@ -29,7 +29,7 @@ This is a simple go program to demonstrate using the modules feature of golang.
 
 ## Working with Modules
 
-1. Remove any go.mod and go.sum files
+1. Remove any go.mod and go.sum files and ensure GO111MODULE environment variable is set to "on" and set GOPROXY to https://gocenter.io
 
 2. Run go mod init go-swampup-service
 
@@ -41,11 +41,14 @@ This is a simple go program to demonstrate using the modules feature of golang.
 
 6 Now test again as before and observe the logs.
 
-7. git add main.go
+7. git add main.go; git add go.mod; git add go.sum
 
 8. git commit -m "go modules test"
 
 9. git push
+If you see an error indicating there is no upstream set, just execute the command displayed.
+This is likely since we did not fork the github repo for simplicity
+e.g git push --set-upstream origin <yourBranchName>
 
 10. Send PR
 
@@ -53,3 +56,5 @@ This is a simple go program to demonstrate using the modules feature of golang.
 
 
 ## Conclusions
+
+We imported logrus module from GoCenter and used it in our example. We saw the dependency on logrus module in go.mod
