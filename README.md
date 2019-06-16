@@ -5,7 +5,7 @@ This is a simple go program to demonstrate using the modules feature of golang.
 
 ## Prerequisites:
 
-- latest golang version with support for go modules (1.12.6)
+- Latest golang version with support for go modules (1.12.6)
 
 - Access to internet to clone the github project
 
@@ -13,19 +13,23 @@ This is a simple go program to demonstrate using the modules feature of golang.
 
 ## Initial Preparation
 
-1. Run `git clone https://github.com/jfrogtraining/go-swampup-service` and change to the go-swampup-service directory
+1. From your browser, open the url `https://github.com/jfrogtraining/go-swampup-service` and fork the repository and copy the clone url.
 
-2. git checkout -b <yourBranchName>
+2. Change to your working directory and clone using the forked repo url
 
-3. go build -v ./...
+3. cd go-swampup-service
 
-4. You can manually run the service by typing ./go-swampup-service
+4. git checkout -b <yourBranchName>
 
-5. Test by running a GET on http://localhost:7888
+5. go build -v ./...
+
+6. You can manually run the service by typing ./go-swampup-service
+
+7. Test by running a GET on http://localhost:7888
 
 6. Observe the logs
 
-7. Interrupt the program by typing CTRL-C
+8. Interrupt the program by typing CTRL-C
 
 ## Working with Modules
 
@@ -47,7 +51,6 @@ This is a simple go program to demonstrate using the modules feature of golang.
 
 9. git push
 If you see an error indicating there is no upstream set, just execute the command displayed.
-This is likely since we did not fork the github repo for simplicity
 e.g git push --set-upstream origin <yourBranchName>
 
 10. Send PR
